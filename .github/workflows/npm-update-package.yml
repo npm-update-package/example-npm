@@ -6,7 +6,7 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  pm-update-package:
+  npm-update-package:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
