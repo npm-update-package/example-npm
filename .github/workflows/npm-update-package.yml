@@ -14,6 +14,8 @@ jobs:
       with:
         node-version: '12.20.2'
     - run: npm ci
-    - run: npx npm-update-package --github-token $GITHUB_TOKEN
+    - run: npx npm-update-package --github-token $GITHUB_TOKEN --git-user-name $GIT_USER_NAME --git-user-email $GIT_USER_EMAIL
       env:
+        GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
+        GIT_USER_NAME: Munieru
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
