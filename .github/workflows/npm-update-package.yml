@@ -1,21 +1,22 @@
 name: npm-update-package
 on:
-  # Enable manually run
   workflow_dispatch:
-  # Automatically run on 0:00 every day
   schedule:
     - cron: '0 0 * * *'
 jobs:
   npm-update-package:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '12.20.2'
-    - run: npm ci
-    - run: npx npm-update-package --github-token $GITHUB_TOKEN --git-user-name $GIT_USER_NAME --git-user-email $GIT_USER_EMAIL
-      env:
-        GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
-        GIT_USER_NAME: Munieru
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.20.2'
+      - run: |
+          git config user.name $GIT_USER_EMAIL
+          git config user.email $GIT_USER_EMAIL
+          npm ci
+          npx npm-update-package --github-token $GITHUB_TOKEN
+        env:
+          GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
+          GIT_USER_NAME: Munieru
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
