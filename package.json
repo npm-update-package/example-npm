@@ -1,7 +1,7 @@
 {
-  "name": "@ts-templates/node12",
+  "name": "example-npm",
   "version": "0.1.0",
-  "description": "Template for TypeScript project using Node.js v12",
+  "description": "Example for npm-update-package using npm",
   "private": true,
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
