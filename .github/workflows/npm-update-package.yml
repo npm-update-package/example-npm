@@ -1,5 +1,8 @@
 name: npm-update-package
 on:
+  # Enable manually run
+  workflow_dispatch:
+  # Automatically run on 0:00 every day
   schedule:
     - cron: '0 0 * * *'
 jobs:
