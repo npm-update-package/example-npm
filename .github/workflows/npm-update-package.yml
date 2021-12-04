@@ -17,6 +17,6 @@ jobs:
           npm ci
           npx npm-update-package --github-token $GITHUB_TOKEN
         env:
-          GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
-          GIT_USER_NAME: Munieru
+          GIT_USER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_USER_NAME: github-actions[bot]
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
