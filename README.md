@@ -3,3 +3,7 @@
 # example-npm
 
 Example for npm-update-package using npm
+
+---
+
+test manually PR
