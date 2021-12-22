@@ -2,4 +2,4 @@
 
 # example-npm
 
-Example for npm-update-package using npm
+Example for [npm-update-package](https://github.com/npm-update-package/npm-update-package) using npm
