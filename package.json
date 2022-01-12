@@ -1,7 +1,7 @@
 {
-  "name": "example-npm",
+  "name": "example-github-actions",
   "version": "0.1.0",
-  "description": "Example for npm-update-package using npm",
+  "description": "Example for npm-update-package using GitHub Actions",
   "private": true,
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
