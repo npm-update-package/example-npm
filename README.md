@@ -1,5 +1,5 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# example-npm
+# example-github-actions
 
-Example for [npm-update-package](https://github.com/npm-update-package/npm-update-package) using npm
+Example for [npm-update-package](https://github.com/npm-update-package/npm-update-package) using GitHub Actions
