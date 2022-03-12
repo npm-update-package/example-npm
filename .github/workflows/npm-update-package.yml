@@ -14,9 +14,8 @@ jobs:
       - run: |
           git config user.name $GIT_USER_NAME
           git config user.email $GIT_USER_EMAIL
-          npx npm-update-package --github-token $GITHUB_TOKEN --reviewers $REVIEWERS
+          npx npm-update-package --github-token $GITHUB_TOKEN
         env:
           GIT_USER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_USER_NAME: github-actions[bot]
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REVIEWERS: munierujp
