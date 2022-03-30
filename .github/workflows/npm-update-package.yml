@@ -13,9 +13,9 @@ jobs:
           node-version: '12.20.2'
       - run: |
           npx npm-update-package \
-          --github-token $GITHUB_TOKEN \
-          --git-user-name $GIT_USER_NAME \
-          --git-user-email $GIT_USER_EMAIL
+            --github-token $GITHUB_TOKEN \
+            --git-user-name $GIT_USER_NAME \
+            --git-user-email $GIT_USER_EMAIL
         env:
           GIT_USER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_USER_NAME: github-actions[bot]
