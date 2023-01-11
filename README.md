@@ -1,4 +1,3 @@
-[![test](https://github.com/npm-update-package/example-github-actions/actions/workflows/test.yml/badge.svg)](https://github.com/npm-update-package/example-github-actions/actions/workflows/test.yml)
 [![npm-update-package](https://github.com/npm-update-package/example-github-actions/actions/workflows/npm-update-package.yml/badge.svg)](https://github.com/npm-update-package/example-github-actions/actions/workflows/npm-update-package.yml)
 
 # example-github-actions
